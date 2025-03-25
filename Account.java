@@ -1,6 +1,9 @@
 package CaseStudy2;
 
 public class Account {
+	    static{
+			System.out.println("GIT")
+		}
 		private long accNumber;
 	private double balance;
 	private String name;
