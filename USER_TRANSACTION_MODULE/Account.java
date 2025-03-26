@@ -1,4 +1,4 @@
-package CaseStudy2;
+package USER_TRANSACTION_MODULE;
 
 public class Account {
 	    static{
