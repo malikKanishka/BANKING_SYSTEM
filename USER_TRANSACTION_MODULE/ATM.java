@@ -1,10 +1,11 @@
-package CaseStudy2;
+package USER_TRANSACTION_MODULE;
 
 import java.util.Scanner;
 
 public class ATM {
 	public static void main(String[] args) {
 
+		public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		Account acc = new Account();
 		System.out.println("Welcome to the ATM! " + acc.getAccName() + ".\nHow may we help you!");
@@ -14,19 +15,20 @@ public class ATM {
 			int switchChoice = sc.nextInt();
 			switch (switchChoice) {
 			case 1:
+				
 				System.out.println("You choose option 1, so enter the amount to be withdrawn!\n");
 				System.out.print("Enter the amount you want to withdraw:= ");
 				double withdrawAmount=sc.nextDouble();
-				double tempWithdrawAmount = acc.withdrawAcc(withdrawAmount);
-				acc.setAccBalance(tempWithdrawAmount);
+				acc.withdrawAcc(withdrawAmount);
 				System.out.println("Your new balance is: "+ acc.getBalancer());
 				break;
 			case 2:{
 				System.out.println("You choose option 2, so enter the amount to be deposited.!\n");
 				System.out.print("Enter the amount you want to deposite := ");
 				double depositeAmount = sc.nextDouble();
-				double tempDepositeAmount = acc.depositeAcc(depositeAmount);
-				acc.setAccBalance(tempDepositeAmount);
+				
+				acc.depositeAcc(depositeAmount);
+			
 				System.out.println("Your new balance is: "+ acc.getBalancer());
 				break;
 				
@@ -42,8 +44,9 @@ public class ATM {
 				System.exit(0);
 			}
 			}
-
 		}
+	}
+
 
 	}
 
