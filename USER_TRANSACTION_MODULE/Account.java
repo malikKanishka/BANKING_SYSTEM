@@ -2,7 +2,7 @@ package USER_TRANSACTION_MODULE;
 
 public class Account {
 	    static{
-			System.out.println("GIT")
+			System.out.println("Kanishka")
 		}
 		private long accNumber;
 	private double balance;
